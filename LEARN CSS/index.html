@@ -1,0 +1,618 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>LEARN CSS</title>
+<!--fontawesome-->
+<script src="https://kit.fontawesome.com/26a6ed458a.js"></script>
+<!--google icons-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--bootstrap icons-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">      
+</head>
+<body>
+<header></header>
+<h1 style="text-align:center ;">LEARN CSS</h1>
+<!--                                                  24.MEDIA QUERIES
+  <style>
+    body {
+      background-color: rgb(218, 231, 35);
+      color: black;
+    }
+    
+    /* On screens that are 992px wide or less, the background color is blue */
+    @media screen and (max-width: 992px) {
+      body {
+        background-color: rgb(37, 194, 233);
+        color: white;
+      }
+    }
+    
+    /* On screens that are 600px wide or less, the background color is olive */
+    @media screen and (max-width: 600px) {
+      body {
+        background-color: rgb(39, 224, 147);
+        color: white;
+      }
+    }
+    </style> -->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, iste obcaecati assumenda, 
+voluptates explicabo, aliquam quia dolorem et eum laborum dicta quo porro esse ipsum. Cumque voluptas repellat error autem?</p>
+
+<!--                                                       SELECTORS   
+
+                                      We can divide CSS selectors into five categories :
+                                            1.Simple selectors - (select elements based on name,id,class)
+                                            2.combinator selectors - (select elements based on a specific relationship between them
+                                            3.pesudo-class selectors - (select elements based on a certain state)
+                                            4.pesudo-elements selectors - (select and style a part of an element)
+                                            5.Attribute selectors - (select elements based on an attribute or attribute value)   -->
+
+<div class="class-selector text-white" id="id-selector">
+<h1>SELECTOR</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, iste obcaecati assumenda, 
+voluptates explicabo, aliquam quia dolorem et eum laborum dicta quo porro esse ipsum. Cumque voluptas repellat error autem?</p>
+</div> 
+<!--                                                    BACKGROUNG IMAGE 
+
+                                                     1.Background-color                    
+                                                     2.Background-image     
+                                                     3.Background-repeat     
+                                                     4.Background-size (attachment)
+                                                     5.Background-position   
+                                                     6.background(shorthand property)   -->
+
+<div class="background-image" align="center">
+<h1 style="color: rgb(37, 196, 64);">BACKGROUND IMAGE</h1>
+<!-- <img src="images/tom.jpg">-->
+<p style="color:white; padding-bottom: 0%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Iste rem in pariatur perspiciatis.Similique illum voluptatibus rem, 
+ullam corrupti cupiditate velit molestias eius doloremque, atque ipsam facere mollitia pariatur eaque.</p> 
+</div><hr>
+
+<!--                                                         BORDER-STYLE
+
+                       The CSS border properties allow you to specify the style,width,and color of an element's border.-->
+
+    <div class="border" >
+        <h1 align="center">CSS BORDER </h1>
+        <button type="button">click here</button>
+        <div class="borders">
+        <p class="dotted">A dotted border</p>
+        <p class="dashed">A dashed border</p>
+        <p class="solid">A solid border</p>
+        <p class="double">A double border</p>
+        <p class="groove">A groove border</p>
+        <p class="ridge">A ridge border</p>
+        <p class="inset">A inset border</p>
+        <p class="outset">A outset border</p>
+        <br>
+        </div>
+        </div>
+
+<!--                                                     BOX MODEL 
+
+                                            All HTML elements can be considered as boxes.
+                                            In CSS the term "box model" is used when talking about design and layout.
+                                            The CSS box model is essentially a box that wraps around every HTML element.
+                                            It consists of:
+                                                    1.Margins
+                                                    2.borders
+                                                    3.padding
+                                                    4.and the actual content.        -->
+
+<div class="boxmodel">
+<h1 style="text-align:center;">BOX MODELS</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate optio saepe at tempora totam nesciunt quidem.
+     Corporis repudiandae at, non illo magnam expedita labore a, eius cumque ipsam et ad! Lorem ipsum dolor sit amet, 
+     consectetur adipisicing elit. Molestiae, exercitationem! Quaerat cumque nesciunt perferendis fugit maxime. 
+     Laudantium quisquam provident fugiat amet exercitationem accusantium inventore nostrum cumque.
+      Temporibus culpa dolorem veritatis!</p>
+</div>
+ 
+<!--                                               HEIGHT AND WIDTH AND OUTLINE    
+                                  
+                                     The CSS height and width properties are used to set the height and width of an element
+                                     height and width values
+                                          auto
+                                          lenght
+                                          %
+                                          initial
+                                          inherit    -->  
+
+<div style="margin-top: 100px; margin: 100px;" class="heightandwidth">
+<h1 align="center" style="color: rgb(86, 153, 10);">HEIGHT AND WIDTH AND OUTLINE</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio sequi iste quod vero,
+ullam molestiae nemo totam iusto. Obcaecati neque quod debitis eum iste quos assumenda pariatur illum. 
+Consequuntur, voluptas!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorem quidem perspiciatis assumenda accusantium tempore? Pariatur quo modi doloremque quisquam aperiam odio error, 
+mollitia quibusdam vero enim similique amet et.
+</p></div>
+
+<!--                                                    MAX-WIDTH
+
+                           The CSS max-width property is used to set the maximum width of an element.
+                           A block-level element always takes up the full widrh available
+                                (stretches out to the left and right as far as it can). -->
+
+<div class="maxwidth">
+<h1 style="text-align:center ;">MAX-WIDTH</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+Ipsam perferendis consequuntur debitis veniam officiis illo reiciendis corporis enim cupiditate asperiores,
+iste laudantium totam soluta temporibus facere a ex! Corporis, eos.</p>
+</div>
+
+<!--                                                  TEXT FORMATTING
+
+                                                     1.TEXT COLOR AND BACKGROUND
+                                                     2.TEXT ALIGNMENT
+                                                     3.TEXT DECORATION
+                                                     4.TEXT TRANSFORMATION
+                                                     5.TEXT SPACING
+                                                     6.TEXT SHADOW   -->
+
+<h1 style="text-align:center">TEXT FORMATTING</h1>
+<div class="text">Text color and background color</div>
+<div class="alignment-left">Text alignment left</div>
+<div class="alignment-right">Text alignment right</div>
+<div class="alignment-center">Text alignment center</div>
+<div class="alignment-justify">Text alignment justifity</div>
+<div class="decoration-overline">Text decoration overline</div>
+<div class="decoration-linethrough">Text decoration linethrough</div>
+<div class="decoration-underline">Text decoration underline</div>
+<div class="decoration-none">Text decoration None</div>
+<div class="transformation-uppercase">This is UPPERCASE</div>
+<div class="transformation-lowercase">This is lowerCASE</div>
+<div class="transformation-capitalize">This is capitalize</div>
+<div class="spacing-indent">lorem,ipsum</div>
+<div class="spacing-letter">lorem,ipsum</div>
+<div class="spacing-word">lorem,ipsum dolor money</div>
+<div class="spacing-lineheight">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+Quod, aliquam suscipit repudiandae enim libero ipsum ratione fuga ipsam delectus! Nesciunt,
+sit aspernatur? Quaerat id blanditiis alias consequuntur, itaque ea facilis?</div>
+<div class="shadow">Text-shadow effect !</div>
+
+<!--                                                             11.ICON    
+
+              The simplest way to add an icon to your HTML page,is with an icon library,such as fontawesome or bootstrap. -->
+<h1 style="text-align: center;">ICONS</h1>
+<ol>
+<li>
+<!--                                                        FONT AWESOME ICONS
+
+              To use the font awesome icons,go to FONTAWESOME.IO,sign in,and get a code to add in the <head> section of your HTML page -->
+
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+</li><br>
+<!--                                                         GOOGLE ICONS
+
+                   To use the GOOGLE MATERIAL ICONS,add the following line inside the <head> section of your HTML page.   -->
+<li> 
+<i class="material-icons">cloud</i>
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+<i class="material-icons">traffic</i>
+</li><br>
+<!--                                                         BOOTSTRAP ICON
+
+                       To use the bootstrap glyphicons,add the following line inside the <head> section of your HTML page.   -->
+
+<li>
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+</li><br>
+</ol>
+
+<!--                                                         LINKS   
+                                             1.a:link - A normal, unvisited link
+                                             2.a:visited - A link the user has visited
+                                             3.a:hover - A link when the user mouses over it
+                                             4.a:active - A link the moment it is clicked-->
+<div class="link">
+<h1 style="text-align:center">LINKS</h1>
+<p style="font-size:30px">i have a one doubt ?</p>
+<a href="#" style="font-size: 20px;">google for help?</a>
+<ol>
+    <li><a href="#facebook">a:link</a>- a normal,unvisited link</li>
+    <li><a href="#google">a:visited</a>-a link user has visited</li>
+    <li><a href="#youtube">a:hover</a>-a link when the user mouses over it</li>
+    <li><a href="#instagram">a:active</a>-a normal, unvisited link</li>
+</ol>
+</div> 
+
+<!--                                                       BUTTONS
+
+             This example demonstrates a more advanced example where we combine several CSS properties to display links as boxes/buttons    -->
+
+<div align="center">
+<h2>SOCIAL LINKS BUTTONS</h2>
+<button class="facebook">facebook</button>
+<button class="instagram">instagram</button>
+<button class="whatsapp">whatsapp</button>
+</div>
+
+<!--                                                           LISTS 
+
+                                           In HTML, there are two main tyoes of lists:
+                                                  1.unordered lists(<ul>) - The list items are marked with bullets.
+                                                  2.ordered lists(<ol>) - The list items are markesd with numbers or letters.
+                                           The CSS list properties allow you  to: 
+                                                  1.Set different list item markers for ordered lists
+                                                  2.Set different list item markers for unordered lists      
+                                                  3.set an image as the list item maker
+                                                  4.add background colors to lists and list items  -->
+
+<div class="lists">
+<h1 style="text-align:center;">LISTS</h1>
+<ol>
+    <li>home</li>
+    <li>mother</li>
+    <li>father</li>
+    <li>brother</li>
+    <li>sister</li>
+    <li>grandmother</li>
+</ol>
+</div>
+
+<!--                                                         TABLE  
+
+                                                       RESPONSIVE TABLE 
+            A responsive table will display a horizontal scroll bar if the screen is too small to display the full content
+            Add a container element (like <div>) with overflow-x:auto around the <table> element to make it responsive  -->
+
+<div style="overflow-x: auto;">
+    <h1 style="text-align:center;">TABLE</h1>
+    <table border="2">
+            <thead>
+              <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>PLACE</th>
+                <th>NUMBER</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Mani</td>
+                <td>22</td>
+                <td>Chennai</td>
+                <td>12345</td>
+                </tr>
+                <tr>
+                <td>kaviya</td>
+                <td>20</td>
+                <td>Virudhunagar</td>
+                <td>12345</td>
+                </tr>
+                <tr>
+                  <td>Dinesh</td>
+                    <td>23</td>
+                    <td>Coimbatore</td>
+                    <td>12345</td>
+                    </tr>
+                    <tr>
+                        <td>Rahul</td>
+                        <td>21</td>
+                        <td>Madurai</td>
+                        <td>12345</td>
+                        </tr>
+                    </tbody>
+    </table>
+</div><br>
+<!--                                                           DISPLAY 
+
+                          The display property is the most impotrant CSS property for controlling layout
+                          The display property specifies if/how an element is displayed
+                          The  default display value for most elements is block or inline -->
+
+<h1 style="text-align:center;">DISPLAY PROPERTY</h1>
+<div class="display">
+<ul>
+<li><a href="#" target="_blank">home</a></li>
+<li><a href="#" target="_blank">about as</a></li>
+<li><a href="#" target="_blank">products</a></li>
+<li><a href="#" target="_blank">contact us</a></li>
+</ul>
+</div>
+<div align="center">
+    <h1>whatsapp</h1>
+    <!--This is hidden-->
+    <h3>This is a hidden heading</h3>
+    <!--This is visibility-->
+    <h4>This is visibility display</h4>
+    <button>show whatsapp status</button>
+    <p>enjoy the momount of whatsapp</p>
+
+</div>
+<!--                                                       POSITION
+
+                                                          1.Static
+                                                          2.relative
+                                                          3.Fixed
+                                                          4.absolute
+                                                          5.Sticky  -->
+
+<h1>position: static;</h1>
+<p>An element with position: static; is not positioned in any special way; 
+    it is always positioned according to the normal flow of the page:</p>
+    <div class="static">
+        This div element has position: static;Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Obcaecati velit distinctio explicabo incidunt quas molestiae est assumenda reprehenderit mollitia, 
+        quis iste eius quos sed quasi minus vero. Optio, fugit quo?
+        </div>    
+    <br>
+    
+    <h2>position: relative;</h2>
+    <p>An element with position: relative;
+         is positioned relative to its normal position:</p>
+             <div class="relative">
+                This div element has position: relative;all eye on me..!
+                </div>
+         <br>
+         
+            <h2>position: fixed;</h2>
+<p>An element with position: fixed; is positioned relative to the viewport,
+     which means it always stays in the same place even if the page is scrolled:</p>
+     <div class="fixed">
+        This div element has position: fixed;
+        </div>
+     <br>
+
+      <h2>position: absolute;</h2>
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor
+     (instead of positioned relative to the viewport, like fixed):</p>
+     <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+     <div class="relative1">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+      </div>
+<br>
+
+<h1>position sticky</h1>
+<div class="sticky">I am sticky! you are beautiful</div>
+<div style="padding-bottom:2000px">
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+       altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
+        Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+       altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
+        Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+<!--                                                         FLOAT 
+
+                                 left - The elemet floats to the left of it's container
+                                 right -The elemet floats to the right of it's container
+                                 none - The element does not float(will be displayed just where it occurs in the text).This is default
+                                 inherit - The element inherits the float value of it's parent 
+-->
+<h2>FLOAT-LEFT</h2>
+<img src="images/tom.jpg">
+<p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Phasellus imperdiet, nulla et dictum interdum,
+nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+Cras ac leo purus. Mauris quis diam velit.
+</p><br><br>
+<div class="float">    
+<h2>FLOAT-RIGHT</h2>
+<img src="images/tom.jpg">
+<p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Phasellus imperdiet, nulla et dictum interdum,
+nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+Cras ac leo purus. Mauris quis diam velit.
+</p>
+</div><br><br>
+<div class="float1">
+<h2>FLOAT-NONE</h2>
+<img src="images/tom.jpg">
+<p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Phasellus imperdiet, nulla et dictum interdum,
+nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+Cras ac leo purus. Mauris quis diam velit.
+</p>
+</div>
+<!--                                                    CLEAR PROPERTY
+                    1.none - The element is not pushed below left or right floated elements.this is default
+                    2.left - The element is pushed below left floated elements
+                    3.right - The element is pushed below right floated elements
+                    4.both - The element is pusded below both left and right floated elements
+                    5.inherit - The element inherits the clear value from its parent         -->
+<h2 style="text-align:center ;">WITHOUT CLEAR</h2>
+<div class="without-clear">div1</div>
+<div class="without-clear1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, praesentium fuga ab,
+   illum temporibus explicabo nostrum nulla doloremque qui impedit, vitae laborum. 
+  Modi molestiae sequi perspiciatis excepturi, sed culpa unde.</div>
+  <h2 style="text-align:center ;">WITH CLEAR</h2>
+  <div class="with-clear">div1</div>
+  <div class="with-clear1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, praesentium fuga ab,
+     illum temporibus explicabo nostrum nulla doloremque qui impedit, vitae laborum. 
+    Modi molestiae sequi perspiciatis excepturi, sed culpa unde.</div>
+  
+
+<!--                                                             WEBSITE LAYOUT   -->
+
+<div class="weblayout-example"></div>
+<h1 class="text-center">WEBSITE LAYOUT</h1>
+<div class="header">HEADER</div>
+<div class="navbar">
+<a href="#">About</a>
+<a href="#">Contact</a>
+<a href="#">Location</a>
+</div>
+<div class="content">
+  <img src="images/mountain.jpg" alt="mountain">
+</div>
+<div class="sidebar">
+  <p>A mountain is an elevated portion of the Earth's crust, generally with steep sides that show significant exposed bedrock. A mountain differs from a plateau in having a limited summit area, and is larger than a hill, typically rising at least 300 metres (1000 feet) above the surrounding land</p>
+</div>
+<div class="footer">FOOTER</div>
+
+<!--                                                     COMBINATORS
+
+                          A combinator is a something that explains the relationship between the selectors.
+                          A CSS selector can contain more than ane simple elector.between the simple selectors,we csn include a combinator.
+                          There are four different combinators in CSS: 
+                                 1.descendant selector(space)
+                                 2.child selector(>)
+                                 3.adjacent sibling selector(+)
+                                 4.general sibling selector(~)   -->
+
+<h2 style="text-align:center;">COMBINNATORS</h2>
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+<div class="combinators">
+<p>Paragraph 1 in the div.</p>
+<p>Paragraph 2 in the div.</p>
+<section><p>Paragraph 3 in the div.</p></section>  <!-- inside a section-->
+</div>
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+<!--                                                 PSEUDO ELEMENTS
+
+                         A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the 
+                         selected elements.
+                                For example : Styling the first letteror line of an element -->
+
+<h1 style="text-align: center;" >CSS PSEUDO ELEMENTS</h1>
+<div class="pseudo">
+<p>You can combine the ::first-letter and ::first-line pseudo-elements 
+to add a special effect to the first letter and the first line of a text! 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae quisquam earum eveniet.
+Recusandae dignissimos nisi ducimus magni harum praesentium quo neque.
+Quas suscipit laboriosam quod. Magni consequuntur nisi quis!</p>
+<h1>This is a heading</h1>
+<p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+<h2>This is a pseudo-element</h2>
+<ol>
+    <li>green</li>
+    <li>black</li>
+    <li>white</li>
+    <li>yellow</li>
+</ol>
+</div>
+<!--                                                            22.UNITS
+
+                     A CSS unit determines the size of a property you're setting for an element or its content.
+                                                          1.Absolute
+         Absolute units are fixed they are not relative to anything else,and are genarally considered to always be the same size.                                     
+                                                              cm - 1cm = 96px/2.54
+                                                              mm - millimeters
+                                                              in - inches(1 in = 96px = 2.54cm ) 
+                                                              px - pixels(1px = 1/96th of 1 in) 
+                                                              pt - points(1pt = 1/72 of 1 in)
+                                                              pc - picas(1pc = 12pt)
+                                                          2.Relative
+         relative length units are relative to something else,perhaps the size of the parent element's font,or the size of the viewport.                                                 
+                                                              % - relative to the parent element
+                                                              em - relative to the font-size of the element
+                                                              rem - font size of the root element
+                                                              ch - 
+                                                              vw - relative to 1% of the width of the viewport
+                                                              vh - relative to 1% of the height of the viewport
+                                                              vmin - 1% of the viewport's smaller dimension
+                                                              vmax -  1% of the viewport's larger dimension -->
+
+<!--                                                                COUNTERS 
+
+         CSS counters are "variable" maintained by CSS whoes values can be incremented by CSS rules(to track how many times they are used.
+         Counters let you adjust the appearance of content based on its placement in the document.
+         To work with CSS counters we will use the following properties :
+                  1.counter-reset - Creates or resets a counter
+                  2.counter-increment - Increment a counter value
+                  3.content - inserts generated content
+                  4.counter() or counters() function - Adds the value of a counter to an element. -->
+
+<div class="counter">
+<h1 style="text-align: center;">COUNTERS</h1>
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>JavaScript Tutorial</h2>
+<h2>Python Tutorial</h2>
+<h2>SQL Tutorial</h2>
+</div><br>
+<!--                                                                   23.!IMPORTANT
+
+            The important rule in CSS is used to add importance to a peoperty/value than normal. 
+           In fact,if you use the !important rule,it will override all previous styling rules for that specific property on that element   -->
+           
+<!--                                                                    OPACITY  
+
+                                         The opacity property specifies the opacity/transparency of an element.     -->
+
+<div class="opacity">
+<h1 style="text-align:center;">OPACITY</h1>
+<img src="images/tom.jpg" alt="tom">
+</div>
+<!--                                                                     FLEXBOX
+
+                                Flexbox is a CSS display type design to help us craft CSS layouts quite easily.
+                                Control the position,size spacing of elements relative to their parents elements and each other.
+                                They are great for responsive designing.
+                                It defines formaing context,which contrils layout.
+                                It is a parent-child relationship.   -->
+                                
+<div class="container">
+<h1>FLEXBOX</h1>
+<P>Flexbox is an css3 layout module used to design responsive layout easier.</P>
+</div>
+<div class="flex-direction">
+  <div>BOX 1</div>
+  <div>BOX 2</div>
+  <div>BOX 3</div>
+</div><br>
+<div class="flex-wrap">
+  <div>BOX 1</div>
+  <div>BOX 2</div>
+  <div>BOX 3</div>
+  <div>BOX 4</div>
+  <div>BOX 5</div>
+  <div>BOX 6</div>
+  <div>BOX 7</div>
+  <div>BOX 8</div>
+  <div>BOX 9</div>
+  <div>BOX 10</div>
+  <div>BOX 11</div>
+  <div>BOX 12</div>
+  <div>BOX 13</div>
+  <div>BOX 14</div>
+  <div>BOX 15</div>
+</div><br>
+<div class="justify-content">
+  <div>BOX 1</div>
+  <div>BOX 2</div>
+  <div>BOX 3</div>
+  <div>BOX 4</div>
+  <div>BOX 5</div>
+</div><br>
+<div class="align-items">
+  <div>BOX 1</div>
+  <div>BOX 2</div>
+  <div>BOX 3</div>
+  <div>BOX 4</div>
+  <div>BOX 5</div>
+</div><br>
+</body>

@@ -1,0 +1,1027 @@
+/*                                                 1.CSS - CASCADING STYLE SHEETS
+
+                           CSS stands for cascading style sheets.
+                           CSS describes how HTML elements are to me displayed on screen,paper,or in other media.
+                           CSS saves a lot of work.It can control the layout of multiple web pages all at once.
+                           External stylesheets are stored in CSS files.with ab externalstylesheet file, you can change the look of
+                           an entire website by changing  just one file !
+                           Files are saved as [filename].css
+
+
+                                                         WHY USE CSS ?
+
+                         CSS is used to define style for web pages,your including the design,layout and variations in display
+                         for different devices and screen sizes.
+
+                                                       2.INSERT CSS IN HTML
+
+                                                           1.External CSS
+                                                           2.Internal CSS
+                                                           3.Inline CSS
+    1.Inline CSS :                      
+            Writing CSS within the Style attribute of an element.
+            An Inline style may be used to apply a unique style for a single element.
+    2.Internal CSS :        
+            We Write CSS inside of the HTML.
+            The internal style is defined inside the <style> element,inside the head section.
+    3.External CSS : 
+            We Create another file with .CSS extension.
+            External styles are defined within the <link> element,inside the <head> section of an HTML page
+
+                                                             SYNTAX 
+
+                                  A CSS rule-set consists of a selector and a declaration block
+    h1{
+        color:red;front-size:5px;
+    }
+
+    h1 - Selector
+    {Declaration}
+    color - Front-size - Property
+    red - 5px- Value
+                                                            3.COLORS
+
+                                         There are 4 types of colors in CSS
+                                             1.valid color - like "red"
+                                             2.A HEX value - like "f39f33"
+                                             3.RGBA value - like rgba(255,203,100,1)
+                                             4.HSL value - like hsl(9,199%,64%)
+
+                                                             COMMENTS
+
+                        Comments are used to explain the code,and may  help when you edit the source aat a later date.
+                        A CSS comment is placed inside the <style> element,and starts with /* and ends with */ 
+
+/*                                                             4.FONT
+
+                                    1.Font-family - Font family applies the font face("Times New roman,Times,Serife")                                            
+                                    2.Font-size - Set the font size(15px)
+                                    3.Font-weight - Decides how thick and thin for the font(sold)
+                                    4.Font-variant - To set the fond in small caps(small-caps)
+                                    5.Font-style - Sets the font to italic or oblique(italic)
+                                    6.Font-height - Specifies the height of a line(1.6)  */                        
+
+/*                                                        RESET DEFAULT :
+ *{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+  * - Selects all elements,This is GLOBAL SELECTOR.
+  
+                                                                5.SELECTOR
+
+                                       We can divide CSS selectors into five categories :
+                                            1.Simple selectors - (select elements based on name,id,class)
+                                            2.combinator selectors - (select elements based on a specific relationship between them
+                                            3.pesudo-class selectors - (select elements based on a certain state)
+                                            4.pesudo-elements selectors - (select and style a part of an element)
+                                            5.Attribute selectors - (select elements based on an attribute or attribute value)   */
+
+/*                                                   SIMPLE SELECTORS OR ELEMENT SELECTOR
+
+                                  The element selector selects HTML elements based on the element name.   */
+p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/*                                                            CLASS SELECTOR
+
+                        The class selector select HTML elements with a specific class attribute.
+                        To select elements with a specific class,write a period(.) character,followed by the class name.  */
+.class-selector{
+    background: #000; 
+    text-align: center;
+}
+.text-white{
+    color: rgb(9, 145, 126);
+} 
+/*                                                        CLASS ELEMENT SELECTORS     */
+.class-selector h1{
+    color: rgb(19, 24, 23);
+}
+/*                                                        CLASS PARENT SLECTORS    */
+.class-selector >p{
+    font-size: 45px;
+}
+/*                                                          ID SELECTOR 
+
+                        The id selector uses the id attribute of an HTML element to select a specific element.
+                        The id of an element is unique within a page,so the id selector is used to select one unique element!
+                        To select an element with aspecific id,write a hash(#) character,followed by the id of the element.    */                     
+#id-selector{
+    background-color: #10ec98;
+}                        
+    
+/*                                                         6.BACKGROUND
+
+                          The CSS background properties are used to add background effects for elements.
+                          In this chepters,you will learn about the following CSS background properties :
+                                                     1.Background-color                    
+                                                     2.Background-image     
+                                                     3.Background-repeat     
+                                                     4.Background-size (attachment)
+                    The background-attachment property specifies whether the background image should scroll or be fixed(will not scroll with the 
+                    rest of the page)                                    
+                                                     5.Background-position   
+                                                     6.background(shorthand property)
+                    To shorten the code,it is also possible to specify all the background properties in one single property.
+                    This is call a shorthand property.      */
+
+/*                                                        BACKGROUND-COLOR 
+
+                          The background-color property specifies the background color of an element
+                          With CSS, a color is most often specified by : 
+                                     a valid color name - like "red"
+                                     a HEX value - like "#ff0000"
+                                     an RGB value - like "rgb(255,0,0)"       */
+.background-image{                                     
+background-color: red;
+/*                                                       BACKGROUND-IMAGE
+
+                    The background-image property specifies an image to use as the background of an element.
+                    By default,the image is repeated so it cover the entire element.   */
+background-image: url('images/tom.jpg');
+/*                                                       BACKGROUND-REPEAT
+
+                    By default,the background-image property repeats an image both horizontally and vertically.
+                    Some images should be repeated only horizntally or vertically,or they will look strange.
+                    If the image above is repeated only horizontally"background-repeat:repeat-x",the background will look better
+                    showing the background image only once is also specified by the "background-repeat:no-repeat"property
+                    The "background-position:righttop"property is uesd to specify the position of the background image*/
+background-repeat:no-repeat;
+background-size: 100% ;
+background-position:center;
+padding: 15%;
+}
+
+/*                                                           7.BORDER-STYLE 
+
+                           The CSS border properties allow you to specify the style,width,and color of an element's border.
+                           The border-style property specifies what kind of border to display.
+
+                                                             Border Shorthand :
+                           To shorten the code,it is also  possible to specify all the individual border properties in one property
+
+                                                             Rounded borders : 
+                           The border-radius property is used to add rounded borders to an element
+                                                             Border Style
+                                                             Border Width
+                                                             Border Color 
+                                                                1.dotted
+                                                                2.dashed
+                                                                3.solid
+                                                                4.double
+                                                                5.groove
+                                                                6.ridge
+                                                                7.inset
+                                                                8.outset
+                                                                9.none
+                                                                10.hidden  */
+.border h1{
+    border-style: solid;
+    border-color: aqua;
+    border-width: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.border button{
+    border-color:greenyellow;
+    border-top: solid;
+    border-right:dotted;
+    border-left: dashed;
+    border-bottom: double;
+    margin:10px 15px;    
+}
+.borders{
+    text-align: center;
+    width: 50%;
+}
+.dotted {
+    border-style: dotted;
+}
+.dashed {
+    border-style:dashed ;
+}
+.solid {
+    border-style: solid;
+}
+.double {
+    border-style: double;
+}
+.groove {
+    border-style: groove;
+}
+.ridge {
+    border-style: ridge;
+}
+.inset {
+    border-style: inset;
+}
+.outset {
+    border-style: outset;
+}
+/*                                                                  8.BOX MODEL 
+
+                                            All HTML elements can be considered as boxes.
+                                            In CSS the term "box model" is used when talking about design and layout.
+                                            The CSS box model is essentially a box that wraps around every HTML element.
+                                                It consists of:
+                                                         1.Margins
+                                                         2.borders
+                                                         3.padding
+                                                         4.and the actual content.*/
+.boxmodel p{
+/*                                                                PADDING 
+
+                                           Clears an area around the content.The padding the transparent */
+
+    padding: 60px;
+/*                                                                BORDER - thickness,                  
+
+                                            A border that goes around the padding and content  */
+
+    border: 15px solid #1097c0;
+/*                                                                MARGIN
+
+                                            Clears an area outside the border.the margin the transparent */
+
+    margin: 50px;
+/*                                                                CONTENT
+
+                                             The content of the box, where text and images appear  */
+
+    background-color: rgb(222, 247, 248);
+
+}
+
+/*                                                     9.HEIGHT AND WIDTH AND OUTLINE
+
+                                      The CSS height and width properties are used to set the height and width of an element
+                                     height and width values
+                                          auto
+                                          lenght
+                                          %
+                                          initial
+                                          inherit   */
+
+.heightandwidth{
+    height: 50%;
+    width: 550px;
+    background-color: greenyellow;
+    padding: 30px;
+    outline: 5px solid rgb(90, 165, 5);
+}
+/*                                                           MAX-WIDTH
+
+                                The CSS max-width property is used to set the maximum width of an element
+                                A block-level element always takes up the full widrh available
+                                (stretches out to the left and right as far as it can). */
+
+.maxwidth p{
+    max-width: 1050px;
+    padding: 39px;
+    border: 10px solid #c986a5;
+    margin: 20px;
+    text-align: center;
+}                                
+/*                                                    10.TEXT FORMATTING     
+                                                         
+                                                     1.TEXT COLOR AND BACKGROUND
+                                                     2.TEXT ALIGNMENT
+                                                     3.TEXT DECORATION
+                                                     4.TEXT TRANSFORMATION
+                                                     5.TEXT SPACING
+                                                     6.TEXT SHADOW  */
+
+/*                                               1.TEXT COLOR AND BACKGROUND      */
+
+.text{ 
+    color: #1097c0;
+    background-color: #052531;
+    padding: 10px;
+}
+/*                                                  2.TEXT ALIGNMENT       */
+
+.alignment-left{
+    text-align: left;
+    color: #73AD21;
+    background-color: #324912;
+    padding: 10px;
+    margin-top: 10px;
+}
+.alignment-right{
+    text-align: right;
+    color: #73AD21;
+    background-color: #324912;
+    padding: 10px;
+    margin-top: 10px;
+}
+.alignment-center{
+    text-align: center;
+    color: #73AD21;
+    background-color: #324912;
+    padding: 10px;
+    margin-top: 10px;
+}
+.alignment-justify{
+    text-align: justify;
+    color: #73AD21;
+    background-color: #324912;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*                                                     3.TEXT DECORATION        */
+
+.decoration-overline{
+    text-decoration: overline;
+    color: #e27bbb;
+    background-color: #42072b;
+    padding: 10px;
+    margin-top: 10px;
+}
+.decoration-linethrough{
+    text-decoration: line-through;
+    color: #e27bbb;
+    background-color: #42072b;
+    padding: 10px;
+    margin-top: 10px;
+}
+.decoration-underline{
+    text-decoration: underline;
+    color: #e27bbb;
+    background-color: #42072b;
+    padding: 10px;
+    margin-top: 10px;
+}
+.decoration-none{
+    text-decoration: none;
+    color: #e27bbb;
+    background-color: #42072b;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*                                                        4.TEXT TRANSFORMATION     */
+
+.transformation-uppercase{
+    text-transform: uppercase;
+    color: #e0e417;
+    background-color: #4b4d0a;
+    padding: 10px;
+    margin-top: 10px;
+}
+.transformation-lowercase{
+    text-transform: lowercase;
+    color: #e0e417;
+    background-color: #4b4d0a;
+    padding: 10px;
+    margin-top: 10px;
+}
+.transformation-capitalize{
+    text-transform: capitalize;
+    color: #e0e417;
+    background-color: #4b4d0a;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*                                                            5.TEXT SPACING     */
+
+.spacing-indent{
+    text-indent: 50px;
+    color: #dd3f3f;
+    background-color: #690c0c;
+    padding: 10px;
+    margin-top: 10px;
+}
+.spacing-letter{
+    letter-spacing:10px;
+    color: #dd3f3f;
+    background-color: #690c0c;
+    padding: 10px;
+    margin-top: 10px;
+}
+.spacing-word{
+    word-spacing: 10px;
+    color: #dd3f3f;
+    background-color: #690c0c;
+    padding: 10px;
+    margin-top: 10px;
+}
+.spacing-lineheight{
+    line-height: 1.8;
+    color: #dd3f3f;
+    background-color: #690c0c;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*                                                          6.TEXT SHADOW  */
+
+.shadow{
+    text-shadow: 2px 2px 5px red;
+    margin-top: 10px;
+    font-size: 100px;
+}
+
+/*                                                            12.LINK  
+
+                                With CSS,links can be styled in many differend ways.
+                                links can be styled with any CSS property(EX : color,font-family,background,etc..)
+                                In addition,links can be styled differently depending on what state they are in.
+                                They 4 links state are:
+                                        1.a:link - A normal, unvisited link
+                                        2.a:visited - A link the user has visited
+                                        3.a:hover - A link when the user mouses over it
+                                        4.a:active - A link the moment it is clicked
+                                When setting the style for several link states,there are some order rules:
+                                        a:hover MUST come after a:link and a:visited
+                                        a;active MUST come after a:hover
+
+                                                            TEXT DECORATION
+                                The text-decoration properties mostly used to remove underlines from links 
+
+                                                            BACKGROUND COLOR
+                                The background-color property can be used to specify a background color for links                            
+                                       */
+.link a{
+    text-decoration: none;
+}
+.link a:link{
+    color: red;
+}
+.link a:visited{
+    color: green;
+}
+.link a:hover{
+    color: rgb(6, 19, 20);
+    font-size: 20px;
+}
+.link a:active{
+    color: blue;
+}
+/*                                                          LINKS BUTTONS
+
+               This example demonstrates a more advanced example where we combine several CSS properties to display links as boxes/buttons  */
+
+.facebook:hover {
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+}
+.instagram{
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: palevioletred;
+}
+.whatsapp {
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+}
+/*                                                              13.LISTS 
+
+                                           In HTML, there are two main tyoes of lists:
+                                                  1.unordered lists(<ul>) - The list items are marked with bullets.
+                                                  2.ordered lists(<ol>) - The list items are markesd with numbers or letters.
+                                           The CSS list properties allow you  to: 
+                                                  1.Set different list item markers for ordered lists
+                                                  2.Set different list item markers for unordered lists      
+                                                  3.set an image as the list item maker
+                                                  4.add background colors to lists and list items  */
+
+.lists ol{
+    background-color: rgb(240, 104, 199);
+    padding: 20px;
+/*                                                     DIFFERENT LIST ITEM MARKERS
+
+                                    The list-style type property specifies the type of list item marker.   */    
+    list-style-type: lower-alpha;
+/*                                                     AN IMAGE AS THE LIST ITEM MARKER
+
+                                    The list-style-image property specifies an image as the list item marker  */                                       
+    list-style-image: url('images/arrw.png');
+/*                                                     POSITION THE  LIST ITEM MARKERS
+
+                   The  list-style-position property specifies the  position of the list-item markers(bullet points)
+                                      1.list-style-position:outside(default)
+                                      2.list-style-position:inside*/    
+    list-style-position: inside;
+}
+/*                                                     STYLING LIST WITH COLORS
+
+                           We can also style lits with colors,to make them look a little more interesting.
+     Anything added to the <ol> or <ul> tag,affacts the entire list,while properties added to the <li> tag will affacts the individual items */
+.lists ol li{
+    background-color: rgb(192, 50, 149);
+    padding: 10px;
+}
+.lists ol li:nth-child(even){
+    background-color: rgb(221, 115, 198);
+}
+/*                                                                14.TABLE
+
+                                        The look of an HTML table can be greatly improved with CSS : 
+
+*/
+table{
+/*                                                           COLLAPSE TABLE BORDERS
+
+                  The border-collapse property sets whether the table borders should be collapsed into a single border*/    
+    border-collapse: collapse;
+/*                                                             FULL-WIDTH TABLE
+
+                                             The table above might seem small in some cases.
+                                             If you need a table that should span the entire screen
+                                             (full-width),add width:100% to the <table> element*/    
+    width: 100%;
+    height: 70px;
+    text-align: center;
+/*                                                               TABLE COLOR
+
+                        The example below specifies the background color and text color of <th> elements*/    
+    background-color: royalblue;
+}
+/*                                                              TABLE BORDERS
+
+                              To specify table borders in CSS,use the border property.
+                              The example below specifies a black border for <table>,<th>,<td> elements*/
+table{
+    border: 1px solid blue;
+}
+table th{
+    font-size: 20px;
+/*                                                              TABLE PADDING
+
+             To control the space between the border and the content in a table,use the padding property on <td> and <th> elements.   */    
+    padding: 15px;
+    text-align:center;
+    background-color: skyblue;
+}
+table td{
+    padding: 10px;
+}
+tr:hover{
+    background-color: rgb(141, 248, 131);
+}
+tr:nth-child(even){
+    background-color: rgb(22, 231, 39);
+}
+/*                                                          15.DISPLAY PROPERTY
+
+                          The display property is the most impotrant CSS property for controlling layout
+                          The display property specifies if/how an element is displayed
+                          The  default display value for most elements is block or inline    */
+.display{
+    background-color: cadetblue;
+    background-image: url('images/leaf.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    background-position: 100%;
+    padding: 6%;
+
+}
+ul li a{
+    color: rgb(211, 62, 17);
+    
+}
+ul li{
+    margin-right: 20px;
+/*                                                           DISPLAY:INLINE
+
+                               A common example is making inline <li> elements for herizontal menus.*/    
+    display: inline;
+}
+/*                                                           DISPLAY:NONE 
+
+                                display:none;is commonly used with javascript to hide and show element without deleting and recreating them.
+                                The <script> element uses display:none;as default  */
+h3{
+    display: none;
+}
+h4{
+    visibility: hidden;
+}
+
+/*                                                         16.POSITION
+
+               This property basically helps you adjust the positioning of an element,making it a little bit easier to design your page
+                                                     1.Static
+                                                     2.relative
+                                                     3.Fixed
+                                                     4.absolute
+                                                     5.Sticky  
+               When you set position to one of these values you can manipulate the element's position with the "top","bottom","right",
+               and "left" properties.  */
+            
+/*                                                         1.STATIC
+
+                                           Default value for elements.
+                                                 The left,right,top,bottom and Z-index properties do not affect an element with  */
+
+div.static {
+    position: static;
+    left: 10px;
+    bottom: 10px;
+    border: 3px solid #73AD21;
+}
+ /*                                                      2.RELATIVE
+
+                          Elements with position:relative; remain in the normal flow of the document 
+                         An offset,based on the values of left,right,top,bottom properties,is applied to the element relative to itself. */
+
+div.relative {
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    width: 200px;
+    height: 300px;
+    border: 3px solid #a50d72;
+  }
+/*                                                        3.FIXED
+
+                    It is positioned relative to the viewport,and always stays in the same place even if the page is scrolled.  */
+
+  div.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(177, 214, 139);
+    border: 3px solid #73AD21;
+  }
+  /*                                                      4.ABSOLUTE 
+
+            It is positioned relative to the nearest positioned ancestor(indtead of positioned relative to the viewport,like fixed) */
+
+  div.relative1  {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #052531;
+  } 
+  div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #1097c0;
+  }
+/*                                                            5.STICKY
+
+                                         It is positioned based on the user's scroll position. */
+                                         
+  div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: rgb(231, 181, 206);
+    border: 2px solid #f00b89;
+    padding: 20px;
+  }
+/*                                                      16.FLOAT PROPERTY
+
+                The float property is used for positioning and formatting content e.g. Let an imgae float left to the text in a container
+                The float property can have one of the following values: 
+                      left - The elemet floats to the left of it's container
+                      right -The elemet floats to the right of it's container
+                      none - The element does not float(will be displayed just where it occurs in the text).This is default
+                      inherit - The element inherits the float value of it's parent 
+                In its simplest use, the float property can be used to wrap text around images.  */
+        
+img {
+  float: left;
+}
+.float img {
+    float:right;
+}
+.float1 img {
+    float:none;
+}
+/*                                                       THE CLEAR PROPERTY 
+                                                       
+        When we use the float property,and we want the next element below (not on right or left),we will have to use the clear property
+        The clear property specifies what should happen with the element that is next to a floating element.
+        The clear property can have one of the following values:
+             1.none - The element is not pushed below left or right floated elements.this is default
+             2.left - The element is pushed below left floated elements
+             3.right - The element is pushed below right floated elements
+             4.both - The element is pusded below both left and right floated elements
+             5.inherit - The element inherits the clear value from its parent   */
+.without-clear{
+    float: left;
+    padding: 10px;
+    border:solid 3px #10ec98;
+}   
+.without-clear1{
+    padding: 10px;
+    border:solid 3px #10ec98;
+}  
+.with-clear{
+    float: left;
+    padding: 10px;
+    border:solid 3px #10ec98;
+}   
+.with-clear1{
+    padding: 10px;
+    border:solid 3px #10ec98;
+    clear: left;
+}            
+/*                                                                  17.WEBSITE LAYOUT 
+                                            A website is often divided into header,Menu,Content,Footer
+                                            Header - Is located at the top of the website
+                                            Navigation - Contains a list of links to help visitors navigating through your website
+                                            Content - some text here
+                                            Footer - Is placed at the bottom of your page.contains information like copyright and contact info*/
+  .header{
+      background: rgb(17, 203, 216);
+      padding: 20px;
+      text-align: center;
+  }
+  .navbar{
+      overflow: hidden;
+      background:#35477d;
+      margin-top: 15px;
+  }
+  .navbar a {
+      float: left;
+      display: block;
+      color: #f6f6f6;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  .content img{
+      background-color:#35477d;
+      float: left;
+      width: 50%;
+      padding: 15px;
+      height: 300px;
+    
+  }
+  .sidebar p{
+      background:#35477d;
+      padding:15px;
+      color: white;
+      text-align:center;
+      word-spacing:5px;
+      float: right;
+      width: 50%;
+      height: 300px;
+  }
+  .footer{
+      background:rgb(17, 203, 216);
+      padding: 15px 0px;
+      text-align: center;
+      clear: both;
+  } 
+/*                                                              18.COMNINATORS
+
+                          A combinator is a something that explains the relationship between the selectors.
+                          A CSS selector can contain more than ane simple elector.between the simple selectors,we csn include a combinator.
+                          There are four different combinators in CSS: 
+                                 1.descendant selector(space)
+                                 2.child selector(>)
+                                 3.adjacent sibling selector(+)
+                                 4.general sibling selector(~)   */
+
+/*                                                       1.DESCENDANT SELECTOR(SPACE)
+
+                                The descendant selector matches all elements that are descendants of a specified element.
+                                The following example selects all <p> elements inside <div> elements.   */
+
+.combinators p {
+    background-color: yellow;
+}
+/*                                                         2.CHILD SELECTOR(>)
+
+                             The child selector selects all elements that are the children of a specified element.
+                             The following example selects all <P> elements that are children of a <div> element.  */
+
+.combinators > p {
+    background-color: rgb(0, 255, 0);
+} 
+/*                                                      3.ADJACENT SIBLING SELECTOR(+)
+
+                  The adjacent sibling selector is used to select an element that is directly after another specific element.
+                  Sibling elements must have the same parent element,and "adjacent" means "immediately following" 
+                  The following example selects the first <p> element that are placed immidiately after <div> elements */
+
+.combinators + p{
+      background-color: blue;
+      text-transform: uppercase;
+      text-align: center;
+}
+/*                                                     4.GENERAL SIBLING SELECTOR(~)
+
+                    The general sibling selector selects all elements that are next sibling of a specified element.
+                    The following example selects all <p> elements that are next sibling of <div> elements. */
+.combinators ~ p{
+      background-color: cadetblue;
+} 
+
+/*                                                        19.PSEUDO-ELEMENTS
+
+                            A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the 
+                            selected elements.
+                            For example : Styling the first letteror line of an element */
+
+/*                                                          ::first-letter
+
+                     ::first-letter pseudo-elemet is used to add a special style to the first letter of a text */
+
+ .pseudo p::first-letter {
+    color: #ce408e;
+    font-size: xx-large;
+  }
+  /*                                                       ::first-line
+
+                     ::first-letter pseudo-elemet is used to add a special style to the first line of a text */
+
+ .pseudo p::first-line {
+    color: #c986a5;
+    font-variant: small-caps;
+ }
+ /*                                                          ::after
+
+                    ::atfer pseudo-element can be used to insert some content after the content of an element */
+
+.pseudo h1::after {
+    content: " ...!";
+  }
+  /*                                                         ::before
+
+                    ::before pseudo-element can be used to insert some content before the content of an element */
+
+ .pseudo h2::before {
+    content: "like: ";
+  }
+/*                                                           ::selection
+
+                    ::selection pseudo-element matches the portion of an element that is selected by a user */
+
+ .pseudo h2::selection {
+    color: rgb(22, 175, 124);
+    background: rgb(79, 9, 145);
+  }
+  /*                                                           ::marker
+
+                             ::marker pseudo-elemnt selects the markers of list items */
+                             
+.pseudo ol>li::marker {
+    color: rgb(224, 187, 21);
+    font-size: 23px;
+  }
+
+/*                                                               20.COUNTERS  
+
+    CSS counters are "variable" maintained by CSS whoes values can be incremented by CSS rules(to track how many times they are used.
+    Counters let you adjust the appearance of content based on its placement in the document.
+    To work with CSS counters we will use the following properties :
+            1.counter-reset - Creates or resets a counter
+            2.counter-increment - Increment a counter value
+            3.content - inserts generated content
+            4.counter() or counters() function - Adds the value of a counter to an element. */
+body {
+   counter-reset: day;
+} 
+.counter h2::before {
+    counter-increment: day;
+    content: "day " counter(day) " - ";
+    background-color: rgb(20, 230, 83);
+    color: green;
+}
+/*                                                                21.OPACITY    
+
+                               The opacity property specifies the opacity/transparency of an element.
+                               It can take a value from 0.0 - 1.0 .
+                               The lower value,the more transparent
+
+                                                            TRANSPARENCY USING RGBA 
+
+                               If you do not want to apply opacity to child elements,like in our example above,use RGBA color values.
+                               The following example set the opacity for the background color and not the text.
+                               EXAMPLE : background:rgba(0,128,0,0.3) - Green background with 30% opacity   */
+
+.opacity > img {
+        opacity: 0.5;
+        float: left;
+}
+.opacity img:hover {
+        opacity: 1.0;
+      }
+
+/*                                                               25.FLEXBOX LAYOUT
+
+                                Flexbox is a CSS display type design to help us craft CSS layouts quite easily.
+                                Control the position,size spacing of elements relative to their parents elements and each other.
+                                They are great for responsive designing.
+                                It defines formaing context,which contrils layout.
+                                It is a parent-child relationship.
+                                                                  1.Flex-direction
+
+                                (This properly is for parent.it allows us to set for change item's direction.)
+                                                                  1.flex-direction:row   
+                                                                  2.flex-direction:row-reverse   
+                                                                  3.flex-direction:column    
+                                                                  4.flex-direction:column-reverse    
+
+                                                                   2.Flex-wrap
+
+                                           (This allow you to wrap the items and prevent overflow)
+                                                                  1.Flex-wrap:wrap
+                                                                  2.Flex-wrap:wrap-reverse
+                                                                  3.Flex-wrap:nowrap(default)                                                          
+                                                                
+                                                                  3.justify-content
+
+                                            (This is used to align items in the x-axis or horizontal axis.)
+                                                                1.justify-content:flex-start
+                                                                2.justify-content:flex-end
+                                                                3.justify-content:center
+                                                                4.justify-content:space-between
+                                                                5.justify-content:space-around
+                                                                6.justify-content:space-evenly
+
+                                                                  4.align-items
+
+                                            (This is used to align items in Y-axis or vertical axis)
+                                                                  1.align-items:flex-start(defult)
+                                                                  2.align-items:flex-end
+                                                                  3.align-items:center 
+                                                                  4.align-items:strech 
+                                                                  5.align-items:baseline  */
+.container{
+    text-align: center;
+    clear: left;
+}                                                                  
+.flex-direction {
+    background-color: lightcoral !important;
+    display: flex;
+    flex-direction:row-reverse;
+}   
+.flex-direction > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    color: #000;
+    float: left;
+}   
+.flex-wrap {
+    background-color: lightblue !important;
+    display: flex;
+    flex-wrap: wrap;   
+}   
+.flex-wrap > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    color: #000;
+    float: left;
+}      
+.justify-content {
+    background-color: lightgreen !important;
+    display: flex;
+    justify-content: space-between;
+    /*justify-content:space-between;*/  
+}   
+.justify-content > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    color: #000;
+    float: left;
+}      
+.align-items {
+    background-color: lightseagreen !important;
+    display: flex;
+    height: 400px;
+    align-items: center;     
+}   
+.align-items > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    color: #000;
+    float: left;
+}                                              
+
+
+
+                                                                  
+                                            
+                                
+    
